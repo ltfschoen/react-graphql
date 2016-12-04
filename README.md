@@ -8,6 +8,7 @@
     * Mutation example http://localhost:3000/graphql?mutation{incrementCounter} run multiple times to increment
 
 ## TODO 
+* [ ] Setup Relay
 * [ ] Setup Mongo instead of Mock API (shown in course)
 
 ## Credits 
