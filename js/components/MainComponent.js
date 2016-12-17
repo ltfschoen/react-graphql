@@ -31,8 +31,6 @@ class MainComponent extends React.Component {
   };
   render() {
     console.log(`View rendering ${JSON.stringify(this.state.links)}`);
-    console.log('blah1', this.state.links);
-    console.log('blah2', this.sortObject(this.state.links));
     let content = this.state.links.slice(0, this.props.limit).map(link => {
       return <li key={link.id}>
                {link.id}
