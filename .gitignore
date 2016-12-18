@@ -4,3 +4,4 @@ node_modules/*
 npm-debug.log
 public/*
 !public/index.html
+js/data/schema.json

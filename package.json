@@ -4,8 +4,9 @@
   "description": "React.js app using GraphQL and Relay",
   "scripts": {
     "webpack": "webpack -wd",
-    "server": "nodemon --exec ./node_modules/.bin/babel-node server.js --presets react,es2015",
-    "start": "npm-run-all --parallel webpack server"
+    "server": "./node_modules/.bin/babel-node server.js --presets react,es2015,stage-0",
+    "server-watch": "nodemon --ignore ./js/data/schema.json --exec ./node_modules/.bin/babel-node server.js --presets react,es2015,stage-0",
+    "start": "npm-run-all server webpack"
   },
   "author": "Luke Schoen",
   "license": "MIT",
@@ -17,6 +18,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.16.0",
+    "babel-relay-plugin": "^0.10.0",
     "events": "^1.1.0",
     "express": "^4.13.3",
     "express-graphql": "^0.6.1",
@@ -26,6 +28,7 @@
     "npm-run-all": "^3.1.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-relay": "^0.10.0",
     "webpack": "^1.12.9"
   },
   "devDependencies": {
